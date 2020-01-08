@@ -1,7 +1,7 @@
 # ETL_Project
 ## Extract, Transform, and Load
 
-### Project Members:
+## *Project Members:*
 - Jean-Paul Mitterhofer
 - Baoxing Wang
 
@@ -13,9 +13,9 @@
 
 ### What useful investigation could be done with the final database:
 
-#### The final database can tell us the correlation between historical weather, natural disaster, and historical stock market behavior, with common variable of time by year.
+> The final database can tell us the correlation between historical weather, natural disaster, and historical stock market behavior, with the common variable of time by year.
 
 ### Whether final database will be relational or non-relational. Why
 
-#### Relational Database. We have data that can be normalized to query using sql. We also can relate all data with time.
+> Relational Database. We have data that can be normalized to query using sql. We also can relate all data with time.
 
