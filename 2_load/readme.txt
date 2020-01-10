@@ -1,0 +1,1 @@
+Loading our csv files to Postgreis using jyputer lab with module sql alchemy
