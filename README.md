@@ -17,7 +17,7 @@
 
 ### What useful investigation could be done with the final database:
 
-> What effect does weather have with with United States economy based on the stock market index of large company performances? The final database can tell us the correlation between historical weather, natural disaster, and historical stock market behavior, with the common variable of time. 
+> What effect does weather have with the United States economy based on the stock market index of large company performances? The final database can tell us the correlation between historical weather, natural disaster, and historical stock market behavior, with the common variable of time. 
 
 ### Whether final database will be relational or non-relational. Why
 
