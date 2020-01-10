@@ -4,7 +4,7 @@ import yfinance as yf
 yf.pdr_override() # <== that's all it takes :-)
 
 # download dataframe
-data = pdr.get_data_yahoo("SPY", start="2017-01-01", end="2017-04-30")
+data = pdr.get_data_yahoo("DJIA", start="1970-01-01", end="2018-12-31")
 
 print(data)
 
