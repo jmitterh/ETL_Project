@@ -17,15 +17,16 @@ CREATE TABLE "stock" (
 );
 
 CREATE TABLE "weather_damage" (
-    "weather_damage_id" int   NOT NULL,
+    "id" int   NOT NULL,
     "year_id" int   NOT NULL,
     "disaster_id" int   NOT NULL,
     "death_toll" sting   NOT NULL,
+    "damage_cost" string   NOT NULL,
     "main_article" string   NOT NULL,
     "location" string   NOT NULL,
     "notes" string   NOT NULL,
     CONSTRAINT "pk_weather_damage" PRIMARY KEY (
-        "weather_damage_id"
+        "id"
      )
 );
 
@@ -39,18 +40,18 @@ CREATE TABLE "us_land_temp" (
 );
 
 CREATE TABLE "year" (
-    "year_id" int   NOT NULL,
+    "id" int   NOT NULL,
     "year" int   NOT NULL,
     CONSTRAINT "pk_year" PRIMARY KEY (
-        "year_id","year"
+        "id","year"
      )
 );
 
 CREATE TABLE "disaster" (
-    "disaster_id" int   NOT NULL,
+    "id" int   NOT NULL,
     "disaster_type" string   NOT NULL,
     CONSTRAINT "pk_disaster" PRIMARY KEY (
-        "disaster_id"
+        "id"
      )
 );
 
@@ -58,10 +59,10 @@ ALTER TABLE "stock" ADD CONSTRAINT "fk_stock_year" FOREIGN KEY("year")
 REFERENCES "year" ("year");
 
 ALTER TABLE "weather_damage" ADD CONSTRAINT "fk_weather_damage_year_id" FOREIGN KEY("year_id")
-REFERENCES "year" ("year_id");
+REFERENCES "year" ("id");
 
 ALTER TABLE "weather_damage" ADD CONSTRAINT "fk_weather_damage_disaster_id" FOREIGN KEY("disaster_id")
-REFERENCES "disaster" ("disaster_id");
+REFERENCES "disaster" ("id");
 
 ALTER TABLE "us_land_temp" ADD CONSTRAINT "fk_us_land_temp_year" FOREIGN KEY("year")
 REFERENCES "year" ("year");
